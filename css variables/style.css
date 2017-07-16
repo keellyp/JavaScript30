@@ -1,0 +1,42 @@
+:root
+{
+    --base: #00f;
+    --spacing: 10px;
+    --blur: 10px;
+}
+img
+{
+    padding: var(--spacing);
+margin: 0;
+    background-color: var(--base);
+    filter: blur(var(--blur));
+}
+
+
+html
+{
+    font-size: 62.5% ;
+}
+body
+{
+    font-family: 'Montserrat', sans-serif;
+
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    background-color: #dedede;
+}
+.controls
+{
+    display: flex;
+    flex-direction: row;
+
+    padding: 3rem;
+
+    align-items: center;
+    justify-content: center;
+}
