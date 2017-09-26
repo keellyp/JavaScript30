@@ -20,14 +20,14 @@ function checkSlide()
 {
 	sliderImages.forEach(sliderImage =>
 	{
-        // half way through the image
-        const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 3
-        // bottom of the image
-        const imageBottom = sliderImage.offsetTop + sliderImage.height
-        const isHalfShown = slideInAt > sliderImage.offsetTop
-        const isNotScrolledPast = window.scrollY < imageBottom
-        isHalfShown && isNotScrolledPast ? sliderImage.classList.add('active') : sliderImage.classList.remove('active')
-    });
+		// half way through the image
+		const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 3
+		// bottom of the image
+		const imageBottom = sliderImage.offsetTop + sliderImage.height
+		const isHalfShown = slideInAt > sliderImage.offsetTop
+		const isNotScrolledPast = window.scrollY < imageBottom
+		isHalfShown && isNotScrolledPast ? sliderImage.classList.add('active') : sliderImage.classList.remove('active')
+	});
 }
 
 window.addEventListener('scroll', debounce(checkSlide, 10));

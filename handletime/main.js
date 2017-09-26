@@ -8,13 +8,13 @@ const seconds = timeNodes
 	})
 	.reduce((total, vidSeconds) => total + vidSeconds)
 
-	let secondsLeft = seconds
-	const hours = Math.floor(secondsLeft / 3600)
-	secondsLeft %= 3600
-	const mins = Math.floor(secondsLeft / 60)
-	secondsLeft %= 60
+let secondsLeft = seconds
+const hours = Math.floor(secondsLeft / 3600)
+secondsLeft %= 3600
+const mins = Math.floor(secondsLeft / 60)
+secondsLeft %= 60
 
-	console.log(hours, mins, secondsLeft)
+
 
 // Map : takes an array and export an array
 // Reduce : takes in an array and return anything I want (string, object, array ...)
